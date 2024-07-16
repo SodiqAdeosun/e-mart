@@ -14,7 +14,6 @@ export default function CarouselComponent() {
     "/assets/images/sliders/02.jpg",
   ];
 
-
   return (
     <div
       className="row scrollAnimation"
@@ -31,13 +30,13 @@ export default function CarouselComponent() {
         onSelect={handleSelect}
         interval={2000}
         indicators={false}
-        controls={true}
+        controls={false}
         prevLabel="Previous"
         fade={true}
         style={{ margin: 0, padding: 0 }}
       >
         <Carousel.Item>
-          <img src="/assets/images/sliders/01.jpg"  class="img-fluid" alt="" />
+          <img src="/assets/images/sliders/01.jpg" class="img-fluid" alt="" />
           <Carousel.Caption
             className="carousel-caption "
             style={{
@@ -50,7 +49,7 @@ export default function CarouselComponent() {
           >
             <h5
               style={{
-                color: "grey",
+                color: "white",
                 fontSize: 14,
                 marginLeft: -250,
               }}
@@ -58,8 +57,8 @@ export default function CarouselComponent() {
               {" "}
               TOP BRANDS
             </h5>
-            <h1 style={{ color: "black" }}>NEW COLLECTION</h1>
-            <p style={{ color: "black", marginLeft: 60 }}>
+            <h1 style={{ color: "white" }}>NEW COLLECTION</h1>
+            <p style={{ color: "white", marginLeft: 60 }}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
             <button
@@ -72,7 +71,7 @@ export default function CarouselComponent() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img src="/assets/images/sliders/02.jpg"  class="img-fluid" alt="" />
+          <img src="/assets/images/sliders/02.jpg" class="img-fluid" alt="" />
           <Carousel.Caption
             style={{
               padding: 0,
@@ -82,9 +81,9 @@ export default function CarouselComponent() {
               left: -150,
             }}
           >
-            <h5 style={{ color: "grey" }}> TOP BRANDS</h5>
-            <h1 style={{ color: "black" }}>NEW COLLECTION</h1>
-            <p style={{ color: "black" }}>
+            <h5 style={{ color: "white" }}> TOP BRANDS</h5>
+            <h1 style={{ color: "white" }}>NEW COLLECTION</h1>
+            <p style={{ color: "white" }}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
             <button className="btn btn-default btn-primary">SHOP NOW</button>
@@ -214,4 +213,3 @@ export default function CarouselComponent() {
     </div>
   );
 }
-

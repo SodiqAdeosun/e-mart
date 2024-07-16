@@ -23,7 +23,7 @@ function Homepage() {
       <section className="header" >
         <Header />
       </section>
-      <section className="hero">
+      <section className="container" id="hero ">
         
       <div className="row" style={{ marginTop: 20}}>
         <HotDeals />
